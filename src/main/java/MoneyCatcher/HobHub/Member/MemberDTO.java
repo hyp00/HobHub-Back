@@ -1,6 +1,5 @@
-package MoneyCatcher.HobHub.dto;
+package MoneyCatcher.HobHub.Member;
 
-import MoneyCatcher.HobHub.entity.MemberEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

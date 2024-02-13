@@ -1,14 +1,14 @@
-package MoneyCatcher.HobHub.Controller;
+package MoneyCatcher.HobHub.Member;
 
-import MoneyCatcher.HobHub.dto.MemberDTO;
-import MoneyCatcher.HobHub.service.MemberService;
+import MoneyCatcher.HobHub.Member.MemberDTO;
+import MoneyCatcher.HobHub.Member.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
+//얘네 카카오로그인으로 싹다 바꿔줘야됨
 @Controller
 @RequiredArgsConstructor //MemberService에 대한 멤버를 사용 가능
 public class MemberController {
@@ -31,4 +31,3 @@ public class MemberController {
         return "index";
     }
 }
-//MemberController.class

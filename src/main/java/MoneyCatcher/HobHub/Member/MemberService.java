@@ -1,7 +1,5 @@
-package MoneyCatcher.HobHub.service;
+package MoneyCatcher.HobHub.Member;
 
-import MoneyCatcher.HobHub.dto.MemberDTO;
-import MoneyCatcher.HobHub.entity.MemberEntity;
 import MoneyCatcher.HobHub.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

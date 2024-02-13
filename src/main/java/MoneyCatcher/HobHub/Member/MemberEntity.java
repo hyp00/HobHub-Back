@@ -1,11 +1,8 @@
-package MoneyCatcher.HobHub.entity;
+package MoneyCatcher.HobHub.Member;
 
-import MoneyCatcher.HobHub.dto.MemberDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 @Entity
 @Setter

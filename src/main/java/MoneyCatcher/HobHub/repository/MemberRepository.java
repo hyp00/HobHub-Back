@@ -1,6 +1,6 @@
 package MoneyCatcher.HobHub.repository;
 
-import MoneyCatcher.HobHub.entity.MemberEntity;
+import MoneyCatcher.HobHub.Member.MemberEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
