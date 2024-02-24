@@ -29,22 +29,26 @@ public class BoardController {
     @Autowired
     private BoardRepository boardRepository;
 
-
     @GetMapping("/board")
     public String home()
     {
+
         return "board";
     }
+    //취미 서랍장
     @GetMapping("board/generic")
     public String index(Model model){
-        Iterable<BoardEntity> ones = boardRepository.findAll();
+        Iterable<BoardEntity> ones = boardRepository.findAll(); //BoardEntity에 있는 모든 값 차례로 꺼내서 ones에 담기
+        System.out.println(ones);
+
         model.addAttribute("ones", ones);//보여줨
         model.addAttribute("newOne", new BoardEntity());//새로운애 보여줭
+
         Iterable<FileEntity> files = fileRepository.findAll();
-        model.addAttribute("all",files);
+        model.addAttribute("files",files);
         return "generic";
     }
-
+    //새 게시물 업로드
     @PostMapping("board/generic/upload")
     public String uploadFile(@ModelAttribute BoardEntity one, @RequestParam("file") MultipartFile file, @RequestParam("files") List<MultipartFile> files) throws IOException, IOException {
 
