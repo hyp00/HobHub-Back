@@ -59,13 +59,17 @@
                 <input type="file" multiple="multiple" name="files">
                 <input type="submit"/>
             </form>
-
+            <!-- 게시물 삭제를 요청하는 버튼 -->
+            <form action="/posts/{postId}" method="post" id="deleteForm">
+                <input type="hidden" name="_method" value="delete">
+                <button type="submit" onclick="return confirm('게시물을 삭제하시겠습니까?')">게시물 삭제</button>
+            </form>
             <!-- 게시물 목록 -->
             <ul>
                 <li th:each="post :${ones}">
                     <h2 th:text="${post.title}"></h2>
                     <p th:text="${post.content}"></p>
-                    <div th:each="imageFile : ${all} ">
+                    <div th:each="imageFile : ${files} ">
                         <img  th:src="|/board/generic/images/${imageFile.id}|" width="150" height="150">
                         <p th:text="${imageFile.orgNm}"></p>
                     </div>

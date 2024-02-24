@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
-
+//파일에 문제가 잇다.. 사진 하나 올리면 모든 게시물에 사진이 올라감
 @RequiredArgsConstructor
 @Service
 public class FileService {
