@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.io.IOException;
 import java.util.Map;
 
+//아니이거 코드 200으로 잘 나오고 userInfo랑 다 잘나오는데 response.html 리턴받는 부분에서 에러뜨는듯??
 @Controller
 @RequestMapping("/member")
 public class KaKaoController {
@@ -32,9 +33,7 @@ public class KaKaoController {
         model.addAttribute("access_token", access_token);
         model.addAttribute("userInfo", userInfo);
 
-        //ci는 비즈니스 전환후 검수신청 -> 허락받아야 수집 가능
         return "response";
-        //로그인화면?
     }
 
 }

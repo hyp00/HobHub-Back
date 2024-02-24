@@ -8,11 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class ChatEntity {
+public class HobbyEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    private String hobby;
+    private String hobby;//플라스크에서 가져온애
 
 }
